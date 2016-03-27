@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 67c9bdb25287e864d84b6ca688ef1301
+timeCreated: 1458612920
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sword Guy_0
+    21300002: Sword Guy_1
+    21300004: Sword Guy_2
+    21300006: Sword Guy_3
+    21300008: Sword Guy_4
+    21300010: Sword Guy_5
+    21300012: Sword Guy_6
+    21300014: Sword Guy_7
+    21300016: Sword Guy_8
+    21300018: Sword Guy_9
+    21300020: Sword Guy_10
+    21300022: Sword Guy_11
+    21300024: Sword Guy_12
+    21300026: Sword Guy_13
+    21300028: Sword Guy_14
+    21300030: Sword Guy_15
+    21300032: Sword Guy_16
+    21300034: Sword Guy_17
+    21300036: Sword Guy_18
+    21300038: Sword Guy_19
+    21300040: Sword Guy_20
+    21300042: Sword Guy_21
+    21300044: Sword Guy_22
+    21300046: Sword Guy_23
+    21300048: Sword Guy_24
+    21300050: Sword Guy_25
+    21300052: Sword Guy_26
+    21300054: Sword Guy_27
+    21300056: Sword Guy_28
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sword Guy_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.49448, y: -3.1386204}
+        - {x: 12.49448, y: 24.86138}
+        - {x: 9.49448, y: 26.86138}
+        - {x: 3.4944801, y: 26.86138}
+        - {x: -11.50552, y: 20.86138}
+        - {x: -11.50552, y: -6.1386204}
+        - {x: -10.50552, y: -16.13862}
+        - {x: -8.50552, y: -17.13862}
+        - {x: 19.49448, y: -17.13862}
+    - name: Sword Guy_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.615166, y: -16.13862}
+        - {x: 20.615166, y: -7.1386204}
+        - {x: 11.615166, y: 35.86138}
+        - {x: 3.6151657, y: 35.86138}
+        - {x: -12.384834, y: 29.86138}
+        - {x: -12.384834, y: -17.13862}
+        - {x: 19.615166, y: -17.13862}
+    - name: Sword Guy_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.735855, y: -17.13862}
+        - {x: 19.735855, y: 21.86138}
+        - {x: 17.735855, y: 36.86138}
+        - {x: -12.264145, y: 36.86138}
+        - {x: -15.264145, y: 35.86138}
+        - {x: -15.264145, y: -17.13862}
+    - name: Sword Guy_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.856552, y: 3.8613796}
+        - {x: 14.856552, y: 36.86138}
+        - {x: -6.143448, y: 36.86138}
+        - {x: -14.143448, y: 33.86138}
+        - {x: -14.143448, y: 5.8613796}
+        - {x: -8.143448, y: -17.13862}
+        - {x: 20.856552, y: -17.13862}
+    - name: Sword Guy_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.477234, y: -9.13862}
+        - {x: 9.477234, y: 36.86138}
+        - {x: 1.4772339, y: 36.86138}
+        - {x: -7.522766, y: 33.86138}
+        - {x: -14.522766, y: 31.86138}
+        - {x: -14.522766, y: -17.13862}
+        - {x: 20.477234, y: -17.13862}
+    - name: Sword Guy_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.5979309, y: 36.86138}
+        - {x: -19.40207, y: 31.86138}
+        - {x: -35.40207, y: 22.86138}
+        - {x: -35.40207, y: -9.13862}
+        - {x: -11.402069, y: -17.13862}
+        - {x: 19.59793, y: -17.13862}
+        - {x: 19.59793, y: -3.1386204}
+        - {x: 9.597931, y: 36.86138}
+    - name: Sword Guy_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.281403, y: 19.86138}
+        - {x: -25.281403, y: 3.8613796}
+        - {x: -22.281403, y: -0.13862038}
+        - {x: -10.281403, y: -17.13862}
+        - {x: 20.718597, y: -17.13862}
+        - {x: 20.718597, y: -8.13862}
+        - {x: 13.718597, y: 19.86138}
+    - name: Sword Guy_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.160736, y: 19.86138}
+        - {x: -10.160736, y: -17.13862}
+        - {x: 20.839264, y: -17.13862}
+        - {x: 20.839264, y: -14.13862}
+        - {x: 1.8392639, y: 19.86138}
+    - name: Sword Guy_8
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.960022, y: 19.86138}
+        - {x: -10.039978, y: 19.86138}
+        - {x: -10.039978, y: -11.13862}
+        - {x: -6.039978, y: -17.13862}
+        - {x: 20.960022, y: -17.13862}
+        - {x: 20.960022, y: -0.13862038}
+        - {x: 10.960022, y: 15.86138}
+    - name: Sword Guy_9
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.5806885, y: 19.86138}
+        - {x: -10.419312, y: 19.86138}
+        - {x: -10.419312, y: -16.13862}
+        - {x: -9.419312, y: -17.13862}
+        - {x: 20.580688, y: -17.13862}
+        - {x: 20.580688, y: -11.13862}
+        - {x: 7.5806885, y: 13.86138}
+    - name: Sword Guy_10
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.29858398, y: 19.86138}
+        - {x: -10.298584, y: 19.86138}
+        - {x: -10.298584, y: -16.13862}
+        - {x: -9.298584, y: -17.13862}
+        - {x: 19.701416, y: -17.13862}
+        - {x: 19.701416, y: -10.13862}
+        - {x: 7.701416, y: 14.86138}
+    - name: Sword Guy_11
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.8220825, y: 26.86138}
+        - {x: -2.1779175, y: 26.86138}
+        - {x: -10.1779175, y: 23.86138}
+        - {x: -10.1779175, y: -17.13862}
+        - {x: 20.822083, y: -17.13862}
+        - {x: 20.822083, y: -3.1386204}
+        - {x: 16.822083, y: 18.86138}
+    - name: Sword Guy_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.442749, y: 26.86138}
+        - {x: 1.442749, y: 26.86138}
+        - {x: -10.557251, y: 21.86138}
+        - {x: -10.557251, y: -7.1386204}
+        - {x: -9.557251, y: -17.13862}
+        - {x: 19.442749, y: -17.13862}
+        - {x: 19.442749, y: -2.1386204}
+        - {x: 13.442749, y: 24.86138}
+    - name: Sword Guy_13
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.563477, y: -17.13862}
+        - {x: 18.563477, y: -4.1386204}
+        - {x: 13.563477, y: 24.86138}
+        - {x: 10.563477, y: 26.86138}
+        - {x: -0.43652344, y: 26.86138}
+        - {x: -10.436523, y: 19.86138}
+        - {x: -10.436523, y: -1.1386204}
+        - {x: -9.436523, y: -16.13862}
+        - {x: -8.436523, y: -17.13862}
+        - {x: 0.56347656, y: -17.13862}
+        - {x: 1.5634766, y: -16.13862}
+        - {x: 1.5634766, y: -11.13862}
+        - {x: 5.5634766, y: -17.13862}
+    - name: Sword Guy_14
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.684143, y: 27.86138}
+        - {x: 5.684143, y: 27.86138}
+        - {x: -10.315857, y: 21.86138}
+        - {x: -10.315857, y: -17.13862}
+        - {x: 19.684143, y: -17.13862}
+        - {x: 19.684143, y: -15.13862}
+        - {x: 18.684143, y: -10.13862}
+    - name: Sword Guy_15
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.8046875, y: 27.86138}
+        - {x: 3.8046875, y: 27.86138}
+        - {x: -9.1953125, y: 23.86138}
+        - {x: -10.1953125, y: 21.86138}
+        - {x: -10.1953125, y: -3.1386204}
+        - {x: -9.1953125, y: -17.13862}
+        - {x: 18.804688, y: -17.13862}
+        - {x: 18.804688, y: -4.1386204}
+        - {x: 14.8046875, y: 25.86138}
+    - name: Sword Guy_16
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.925415, y: 26.86138}
+        - {x: -10.074585, y: 20.86138}
+        - {x: -10.074585, y: -17.13862}
+        - {x: 19.925415, y: -17.13862}
+        - {x: 19.925415, y: 0.8613796}
+        - {x: 14.925415, y: 26.86138}
+    - name: Sword Guy_17
+      rect:
+        serializedVersion: 2
+        x: 4352
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.4538574, y: 23.86138}
+        - {x: -10.453857, y: 19.86138}
+        - {x: -10.453857, y: -17.13862}
+        - {x: 7.5461426, y: -17.13862}
+        - {x: 10.546143, y: -7.1386204}
+        - {x: 10.546143, y: 23.86138}
+    - name: Sword Guy_18
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.333252, y: 5.8613796}
+        - {x: -8.333252, y: -15.13862}
+        - {x: 6.666748, y: -15.13862}
+        - {x: 9.666748, y: -14.13862}
+        - {x: 9.666748, y: 30.86138}
+        - {x: -2.333252, y: 30.86138}
+        - {x: -10.333252, y: 25.86138}
+    - name: Sword Guy_19
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.212524, y: -15.13862}
+        - {x: -8.212524, y: -17.13862}
+        - {x: 7.7874756, y: -17.13862}
+        - {x: 10.787476, y: -8.13862}
+        - {x: 10.787476, y: 23.86138}
+        - {x: 3.7874756, y: 23.86138}
+        - {x: -10.212524, y: 15.86138}
+    - name: Sword Guy_20
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.408203, y: 26.86138}
+        - {x: 1.4082031, y: 26.86138}
+        - {x: -10.591797, y: 21.86138}
+        - {x: -10.591797, y: -7.1386204}
+        - {x: -9.591797, y: -17.13862}
+        - {x: 19.408203, y: -17.13862}
+        - {x: 19.408203, y: -2.1386204}
+        - {x: 13.408203, y: 24.86138}
+    - name: Sword Guy_21
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.471191, y: 24.86138}
+        - {x: -13.471191, y: -17.13862}
+        - {x: 17.528809, y: -17.13862}
+        - {x: 17.528809, y: -11.13862}
+        - {x: 9.528809, y: 24.86138}
+    - name: Sword Guy_22
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.350464, y: 26.86138}
+        - {x: -10.350464, y: 21.86138}
+        - {x: -10.350464, y: -10.13862}
+        - {x: -7.350464, y: -17.13862}
+        - {x: 11.649536, y: -17.13862}
+        - {x: 12.649536, y: -14.13862}
+        - {x: 12.649536, y: 26.86138}
+    - name: Sword Guy_23
+      rect:
+        serializedVersion: 2
+        x: 5888
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.770264, y: 26.86138}
+        - {x: 10.770264, y: 27.86138}
+        - {x: -3.2297363, y: 27.86138}
+        - {x: -11.229736, y: 22.86138}
+        - {x: -11.229736, y: -17.13862}
+        - {x: 8.770264, y: -17.13862}
+        - {x: 10.770264, y: -15.13862}
+        - {x: 10.770264, y: -8.13862}
+        - {x: 11.770264, y: -0.13862038}
+    - name: Sword Guy_24
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.109131, y: -17.13862}
+        - {x: 18.89087, y: -17.13862}
+        - {x: 18.89087, y: 0.8613796}
+        - {x: 10.890869, y: 22.86138}
+        - {x: 6.890869, y: 24.86138}
+        - {x: -0.10913086, y: 24.86138}
+        - {x: -13.109131, y: 19.86138}
+    - name: Sword Guy_25
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5115967, y: 26.86138}
+        - {x: -10.488403, y: 20.86138}
+        - {x: -10.488403, y: 0.8613796}
+        - {x: -8.488403, y: -17.13862}
+        - {x: 10.511597, y: -17.13862}
+        - {x: 12.511597, y: -15.13862}
+        - {x: 12.511597, y: 25.86138}
+        - {x: 10.511597, y: 26.86138}
+    - name: Sword Guy_26
+      rect:
+        serializedVersion: 2
+        x: 6656
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.632324, y: -17.13862}
+        - {x: 11.632324, y: 27.86138}
+        - {x: -6.367676, y: 27.86138}
+        - {x: -11.367676, y: 22.86138}
+        - {x: -11.367676, y: -17.13862}
+    - name: Sword Guy_27
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.246948, y: 26.86138}
+        - {x: -10.246948, y: -17.13862}
+        - {x: 20.753052, y: -17.13862}
+        - {x: 20.753052, y: 26.86138}
+    - name: Sword Guy_28
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.67, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.873657, y: 30.86138}
+        - {x: -7.126343, y: 30.86138}
+        - {x: -10.126343, y: 16.86138}
+        - {x: -10.126343, y: -17.13862}
+        - {x: 15.873657, y: -17.13862}
+        - {x: 22.873657, y: 11.86138}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: f4411782914f53748a7ba830188049e9
+timeCreated: 1458595891
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Robot_0
+    21300002: Robot_1
+    21300004: Robot_2
+    21300006: Robot_3
+    21300008: Robot_4
+    21300010: Robot_5
+    21300012: Robot_6
+    21300014: Robot_7
+    21300016: Robot_8
+    21300018: Robot_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Robot_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: -97.5}
+        - {x: 37.5, y: 8.5}
+        - {x: -16.5, y: 8.5}
+        - {x: -31.5, y: -27.5}
+        - {x: -31.5, y: -88.5}
+        - {x: -18.5, y: -102.5}
+        - {x: -4.5, y: -102.5}
+        - {x: -4.5, y: -98.5}
+        - {x: 0.5, y: -102.5}
+        - {x: 23.5, y: -102.5}
+    - name: Robot_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38.800003, y: -95.5}
+        - {x: 38.800003, y: 8.5}
+        - {x: -12.199997, y: 8.5}
+        - {x: -30.199997, y: -29.5}
+        - {x: -30.199997, y: -60.5}
+        - {x: -29.199997, y: -61.5}
+        - {x: -23.199997, y: -62.5}
+        - {x: -17.199997, y: -102.5}
+        - {x: -3.199997, y: -102.5}
+        - {x: -3.199997, y: -98.5}
+        - {x: 1.800003, y: -102.5}
+        - {x: 23.800003, y: -102.5}
+    - name: Robot_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27.600006, y: -102.5}
+        - {x: 38.600006, y: -89.5}
+        - {x: 38.600006, y: -19.5}
+        - {x: 24.600006, y: 8.5}
+        - {x: -7.399994, y: 8.5}
+        - {x: -29.399994, y: -11.5}
+        - {x: -30.399994, y: -21.5}
+        - {x: -30.399994, y: -70.5}
+        - {x: -17.399994, y: -102.5}
+        - {x: -3.399994, y: -102.5}
+        - {x: -3.399994, y: -98.5}
+        - {x: -4.399994, y: -96.5}
+        - {x: 4.600006, y: -102.5}
+    - name: Robot_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5999756, y: 12.5}
+        - {x: -26.599976, y: -17.5}
+        - {x: -30.599976, y: -36.5}
+        - {x: -30.599976, y: -102.5}
+        - {x: 37.400024, y: -102.5}
+        - {x: 37.400024, y: -12.5}
+        - {x: 23.400024, y: 12.5}
+    - name: Robot_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.299988, y: 8.5}
+        - {x: -31.299988, y: -16.5}
+        - {x: -31.299988, y: -66.5}
+        - {x: -24.299988, y: -102.5}
+        - {x: 24.700012, y: -102.5}
+        - {x: 37.700012, y: -70.5}
+        - {x: 37.700012, y: -12.5}
+        - {x: 7.700012, y: 8.5}
+    - name: Robot_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: -102.5}
+        - {x: 50.5, y: -87.5}
+        - {x: 75.5, y: -53.5}
+        - {x: 75.5, y: 8.5}
+        - {x: -22.5, y: 8.5}
+        - {x: -60.5, y: -5.5}
+        - {x: -60.5, y: -58.5}
+        - {x: -26.5, y: -102.5}
+        - {x: -4.5, y: -102.5}
+        - {x: -4.5, y: -98.5}
+        - {x: -5.5, y: -96.5}
+        - {x: 6.5, y: -102.5}
+    - name: Robot_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38.80005, y: -95.5}
+        - {x: 38.80005, y: 8.5}
+        - {x: -12.199951, y: 8.5}
+        - {x: -30.199951, y: -29.5}
+        - {x: -30.199951, y: -60.5}
+        - {x: -29.199951, y: -61.5}
+        - {x: -23.199951, y: -62.5}
+        - {x: -17.199951, y: -102.5}
+        - {x: -3.1999512, y: -102.5}
+        - {x: -3.1999512, y: -98.5}
+        - {x: 1.8000488, y: -102.5}
+        - {x: 23.800049, y: -102.5}
+    - name: Robot_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.599976, y: -102.5}
+        - {x: 38.599976, y: -68.5}
+        - {x: 38.599976, y: -8.5}
+        - {x: 27.599976, y: 24.5}
+        - {x: -24.400024, y: 24.5}
+        - {x: -24.400024, y: -39.5}
+        - {x: -19.400024, y: -102.5}
+        - {x: -3.4000244, y: -102.5}
+        - {x: -3.4000244, y: -98.5}
+        - {x: -4.4000244, y: -96.5}
+        - {x: 4.5999756, y: -102.5}
+    - name: Robot_8
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34.400024, y: -3.5}
+        - {x: -12.599976, y: 10.5}
+        - {x: -13.599976, y: 19.5}
+        - {x: -14.599976, y: 24.5}
+        - {x: -27.599976, y: 24.5}
+        - {x: -39.599976, y: 20.5}
+        - {x: -59.599976, y: -0.5}
+        - {x: -59.599976, y: -34.5}
+        - {x: -48.599976, y: -62.5}
+        - {x: -23.599976, y: -102.5}
+        - {x: 21.400024, y: -102.5}
+        - {x: 33.400024, y: -77.5}
+        - {x: 34.400024, y: -74.5}
+    - name: Robot_9
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.700073, y: -69.5}
+        - {x: 31.700073, y: -21.5}
+        - {x: 22.700073, y: -0.5}
+        - {x: -15.299927, y: -0.5}
+        - {x: -37.299927, y: -15.5}
+        - {x: -37.299927, y: -96.5}
+        - {x: -31.299927, y: -102.5}
+        - {x: 21.700073, y: -102.5}
+        - {x: 21.700073, y: -98.5}
+        - {x: 20.700073, y: -96.5}
+        - {x: 18.700073, y: -72.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,265 @@
+fileFormatVersion: 2
+guid: 5448fe309ed7e814497da3e7620aa4e1
+timeCreated: 1458686716
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Robot Factory Background_0
+    21300002: Robot Factory Background_1
+    21300004: Robot Factory Background_2
+    21300006: Robot Factory Background_3
+    21300008: Robot Factory Background_4
+    21300010: Robot Factory Background_5
+    21300012: Robot Factory Background_6
+    21300014: Robot Factory Background_7
+    21300016: Robot Factory Background_8
+    21300018: Robot Factory Background_9
+    21300020: Robot Factory Background_10
+    21300022: Robot Factory Background_11
+    21300024: Robot Factory Background_12
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Robot Factory Background_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1024
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -315.5, y: 236.5}
+        - {x: -315.5, y: -236.5}
+        - {x: 315.5, y: -236.5}
+        - {x: 315.5, y: 236.5}
+    - name: Robot Factory Background_1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 1024
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -315.34613, y: 236.5}
+        - {x: -315.34613, y: -236.5}
+        - {x: 315.65387, y: -236.5}
+        - {x: 315.65387, y: 236.5}
+    - name: Robot Factory Background_2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 1024
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -315.19226, y: 236.5}
+        - {x: -315.19226, y: -236.5}
+        - {x: 315.80774, y: -236.5}
+        - {x: 315.80774, y: 236.5}
+    - name: Robot Factory Background_3
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 1024
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -315.03833, y: 236.5}
+        - {x: -315.03833, y: -236.5}
+        - {x: 315.96167, y: -236.5}
+        - {x: 315.96167, y: 236.5}
+    - name: Robot Factory Background_4
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 1024
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -314.88452, y: 236.5}
+        - {x: -314.88452, y: -236.5}
+        - {x: 316.11548, y: -236.5}
+        - {x: 316.11548, y: 236.5}
+    - name: Robot Factory Background_5
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 1024
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -314.7307, y: 236.5}
+        - {x: -314.7307, y: -236.5}
+        - {x: 316.2693, y: -236.5}
+        - {x: 316.2693, y: 236.5}
+    - name: Robot Factory Background_6
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 0
+        width: 1024
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -315.07666, y: 236.5}
+        - {x: -315.07666, y: -236.5}
+        - {x: 316.92334, y: -236.5}
+        - {x: 316.92334, y: 236.5}
+    - name: Robot Factory Background_7
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 0
+        width: 1024
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -315.42285, y: 236.5}
+        - {x: -315.42285, y: -236.5}
+        - {x: 315.57715, y: -236.5}
+        - {x: 315.57715, y: 236.5}
+    - name: Robot Factory Background_8
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 0
+        width: 1024
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -315.26904, y: 236.5}
+        - {x: -315.26904, y: -236.5}
+        - {x: 315.73096, y: -236.5}
+        - {x: 315.73096, y: 236.5}
+    - name: Robot Factory Background_9
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 0
+        width: 1024
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -315.11523, y: 236.5}
+        - {x: -315.11523, y: -236.5}
+        - {x: 315.88477, y: -236.5}
+        - {x: 315.88477, y: 236.5}
+    - name: Robot Factory Background_10
+      rect:
+        serializedVersion: 2
+        x: 10240
+        y: 0
+        width: 1024
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -314.96143, y: 236.5}
+        - {x: -314.96143, y: -236.5}
+        - {x: 316.03857, y: -236.5}
+        - {x: 316.03857, y: 236.5}
+    - name: Robot Factory Background_11
+      rect:
+        serializedVersion: 2
+        x: 11264
+        y: 0
+        width: 1024
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -314.80762, y: 236.5}
+        - {x: -314.80762, y: -236.5}
+        - {x: 316.19238, y: -236.5}
+        - {x: 316.19238, y: 236.5}
+    - name: Robot Factory Background_12
+      rect:
+        serializedVersion: 2
+        x: 12288
+        y: 0
+        width: 1024
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -314.65332, y: 236.5}
+        - {x: -314.65332, y: -236.5}
+        - {x: 316.34668, y: -236.5}
+        - {x: 316.34668, y: 236.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

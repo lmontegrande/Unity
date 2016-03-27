@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 1a705b39df50cfa458b3bc74718879f8
+timeCreated: 1458667876
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Robot Building_0
+    21300002: Robot Building_1
+    21300004: Robot Building_2
+    21300006: Robot Building_3
+    21300008: Robot Building_4
+    21300010: Robot Building_5
+    21300012: Robot Building_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Robot Building_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0
+        width: 327
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -58.571426, y: 110.5}
+        - {x: -59.571426, y: 109.5}
+        - {x: -59.571426, y: -32.5}
+        - {x: -92.57143, y: -32.5}
+        - {x: -93.57143, y: -33.5}
+        - {x: -93.57143, y: -110.5}
+        - {x: 94.42857, y: -110.5}
+        - {x: 94.42857, y: 110.5}
+    - name: Robot Building_1
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 0
+        width: 327
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59.42856, y: 110.5}
+        - {x: -60.42856, y: 109.5}
+        - {x: -60.42856, y: -32.5}
+        - {x: -92.42856, y: -32.5}
+        - {x: -93.42856, y: -33.5}
+        - {x: -93.42856, y: -110.5}
+        - {x: 94.57144, y: -110.5}
+        - {x: 94.57144, y: 110.5}
+    - name: Robot Building_2
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 327
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -58.428528, y: 110.5}
+        - {x: -59.428528, y: 109.5}
+        - {x: -59.428528, y: -32.5}
+        - {x: -92.42853, y: -32.5}
+        - {x: -93.42853, y: -33.5}
+        - {x: -93.42853, y: -110.5}
+        - {x: 94.57147, y: -110.5}
+        - {x: 94.57147, y: 110.5}
+    - name: Robot Building_3
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 0
+        width: 327
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59.285645, y: 110.5}
+        - {x: -60.285645, y: 109.5}
+        - {x: -60.285645, y: -32.5}
+        - {x: -92.285645, y: -32.5}
+        - {x: -93.285645, y: -33.5}
+        - {x: -93.285645, y: -110.5}
+        - {x: 94.714355, y: -110.5}
+        - {x: 94.714355, y: 110.5}
+    - name: Robot Building_4
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 0
+        width: 326
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59.214233, y: 110.5}
+        - {x: -60.214233, y: 109.5}
+        - {x: -60.214233, y: -32.5}
+        - {x: -92.21423, y: -32.5}
+        - {x: -93.21423, y: -33.5}
+        - {x: -93.21423, y: -110.5}
+        - {x: 93.78577, y: -110.5}
+        - {x: 93.78577, y: 110.5}
+    - name: Robot Building_5
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 0
+        width: 328
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59.714233, y: 110.5}
+        - {x: -60.714233, y: 109.5}
+        - {x: -60.714233, y: -32.5}
+        - {x: -92.71423, y: -32.5}
+        - {x: -93.71423, y: -33.5}
+        - {x: -93.71423, y: -110.5}
+        - {x: 94.28577, y: -110.5}
+        - {x: 94.28577, y: 110.5}
+    - name: Robot Building_6
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 0
+        width: 326
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59.07129, y: 110.5}
+        - {x: -60.07129, y: 109.5}
+        - {x: -60.07129, y: -32.5}
+        - {x: -92.07129, y: -32.5}
+        - {x: -93.07129, y: -33.5}
+        - {x: -93.07129, y: -110.5}
+        - {x: 93.92871, y: -110.5}
+        - {x: 93.92871, y: 110.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
