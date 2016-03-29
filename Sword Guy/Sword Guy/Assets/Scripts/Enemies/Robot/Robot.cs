@@ -24,6 +24,7 @@ public class Robot : Enemy {
     [SerializeField]
     private AudioClip getHitSound;
 
+    private SpriteRenderer spriteRenderer;
     private Animator anim;
     private GameObject player;
     private Rigidbody2D body;
@@ -40,6 +41,7 @@ public class Robot : Enemy {
     {
         if (gameManager != null)
             gameManager = GameManager.instance;
+        spriteRenderer = GetComponent<SpriteRenderer>();
         audioSource = GetComponent<AudioSource>();
         dead = false;
         patrolling = true;
@@ -50,9 +52,16 @@ public class Robot : Enemy {
         player = GameObject.Find("Sword Guy");
     }
 
+    protected override void ShowDamage()
+    {
+        spriteRenderer.color = Color.Lerp(Color.red, Color.white, (float)currentHealth / (float)maxHealth);
+    }
+
     void Update()
     {
         anim.SetFloat("velocityX", Mathf.Abs(body.velocity.x));
+
+        ShowDamage();
 
         if (patrolling)
         {
@@ -114,6 +123,16 @@ public class Robot : Enemy {
     }
 
     void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player" && !dead)
+        {
+            attacking = true;
+            other.gameObject.GetComponent<SwordGuy>().GetHit(myDamage);
+            anim.SetBool("attack", true);
+        }
+    }
+
+    void OnCollisionStay2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player" && !dead)
         {

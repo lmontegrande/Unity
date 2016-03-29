@@ -62,18 +62,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Building\Building.cs" />
+    <Compile Include="Assets\Scripts\Button\ContinueButton.cs" />
+    <Compile Include="Assets\Scripts\Button\TryAgainButton.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Door\Door.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemies\Laser Robot\Laser.cs" />
     <Compile Include="Assets\Scripts\Enemies\Laser Robot\LaserRobot.cs" />
     <Compile Include="Assets\Scripts\Enemies\Robot\BigRobot.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Robot\ChaseRobot.cs" />
     <Compile Include="Assets\Scripts\Enemies\Robot\Robot.cs" />
     <Compile Include="Assets\Scripts\Game Manager\GameManager.cs" />
     <Compile Include="Assets\Scripts\HUD\MainMenuButton.cs" />
     <Compile Include="Assets\Scripts\Hazards\Spikes.cs" />
     <Compile Include="Assets\Scripts\Main Menu\MainMenuManager.cs" />
     <Compile Include="Assets\Scripts\Music Manager\MusicManager.cs" />
+    <Compile Include="Assets\Scripts\Sword Guy\FloorDetector.cs" />
     <Compile Include="Assets\Scripts\Sword Guy\SwordGuy.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

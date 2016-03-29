@@ -19,11 +19,13 @@ public class SwordGuy : MonoBehaviour
         maxSprintSpeed = 10f,
         jumpForce = 5f,
         jumpForceHigh = 10f,
-        HorizontalDrag = 3f,
+        horizontalGroundDrag = 3f,
+        horizontalAirDrag = 1f,
+        horizontalAirControlAdjust = 2f,
         horizontalKnockBack = 2f,
         verticalKnockBack = 2f,
         recoveryTimeInSeconds = 5f,
-        jumpRecoveryTimeInSeconds = 1f,
+        jumpDurationTime = 1f,
         swingDistance = 1f,
         attackRecoverTime = .5f,
         invulnerabilityTimeMax = .5f;
@@ -39,18 +41,22 @@ public class SwordGuy : MonoBehaviour
     [SerializeField]
     private Transform sword;
 
+    [SerializeField]
+    private FloorDetector feet;
+
     private Rigidbody2D body;
     private SpriteRenderer spriteRenderer;
     private Animator anim;
     private GameObject attackText;
     private GameObject healthText;
     private GameObject mainMenuButton;
+    private GameObject reloadLevelButton;
     private GameManager gameManager;
     private AudioSource audioSource;
     private float invulnerabilityTimer = 1f;
     private float currentAttackRecoverTime;
     private float currentRecoveryTime = 0;
-    private float currentJumpRecoveryTime = 0;
+    private float currentJumpDurationTime = 0;
     private int currentHealth;
     private bool isGrounded;
     private bool facingLeft;
@@ -66,8 +72,10 @@ public class SwordGuy : MonoBehaviour
     /// </summary>
     void Start()
     {
-        currentJumpRecoveryTime = jumpRecoveryTimeInSeconds;
+        currentJumpDurationTime = jumpDurationTime;
         mainMenuButton = GameObject.Find("Main Menu Button");
+        reloadLevelButton = GameObject.Find("Reload Level Button");
+        reloadLevelButton.SetActive(false);
         mainMenuButton.SetActive(false);
         currentAttackRecoverTime = 0;
         audioSource = GetComponent<AudioSource>();
@@ -81,7 +89,7 @@ public class SwordGuy : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         if (transform.rotation.y < 180)
         {
-            facingLeft = true;
+            facingLeft = false;
         }
         if (gameManager.health <= 0)
         {
@@ -99,36 +107,8 @@ public class SwordGuy : MonoBehaviour
     void Update()
     {
         UpdateHUD();
+        SetAnimVars();
         HandleInput();
-        
-    }
-
-    /// <summary>
-    /// Used for checking if player is on ground and changing jumping animation
-    /// </summary>
-    /// <param name="other"></param>
-    void OnCollisionStay2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Ground")
-        {
-            if (jumping)
-            {
-                anim.SetBool("jump", false);
-            }
-            isGrounded = true;
-        }
-    }
-
-    /// <summary>
-    /// Used for checking if player has left the ground
-    /// </summary>
-    /// <param name="other"></param>
-    void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Ground")
-        {
-            isGrounded = false;
-        }
     }
 
     // Helper Methods -------------------------------------------------------------
@@ -139,11 +119,7 @@ public class SwordGuy : MonoBehaviour
     void HandleInput()
     {
         if (dead)
-        {
-            anim.SetBool("gotHit", false);
             return;
-        }
-
         AttackInput();
         Move();
     }
@@ -154,25 +130,14 @@ public class SwordGuy : MonoBehaviour
     void UpdateHUD()
     {
         Text text = attackText.GetComponent<Text>();
-        //if (!attacking && !jumping && !gettingHit)
-        //{
-        //    text.text = "ATTACK READY!";
-        //    text.color = Color.green;
-        //}
-        //else
-        //{
-        //    text.text = "Can't Attack";
-        //    text.color = Color.red;
-        //}
-
-        if (currentJumpRecoveryTime >= jumpRecoveryTimeInSeconds)
+        if (!attacking && !jumping && !gettingHit)
         {
-            text.text = "JUMP READY!";
+            text.text = "ATTACK READY!";
             text.color = Color.green;
         }
         else
         {
-            text.text = "Can't Jump";
+            text.text = "Can't Attack";
             text.color = Color.red;
         }
 
@@ -184,10 +149,22 @@ public class SwordGuy : MonoBehaviour
         else
         {
             mainMenuButton.SetActive(true);
+            reloadLevelButton.SetActive(true);
             text.text = "";
             healthText.GetComponent<Text>().color = Color.red;
             healthText.GetComponent<Text>().text = "Game Over";
         }
+    }
+
+    void SetAnimVars()
+    {
+        if (dead)
+        {
+            anim.SetBool("gotHit", false);
+            return;
+        }
+        anim.SetFloat("velocityX", Mathf.Abs(body.velocity.x));
+        anim.SetFloat("velocityY", Mathf.Abs(body.velocity.y));
     }
 
     /// <summary>
@@ -196,7 +173,6 @@ public class SwordGuy : MonoBehaviour
     void AttackInput()
     {
         Invulnerability();
-        anim.SetFloat("velocityX", Mathf.Abs(body.velocity.x));
 
         // Handle when getting hit
         if (gettingHit)
@@ -251,42 +227,63 @@ public class SwordGuy : MonoBehaviour
     {
 
         // Handle horizontal drag
-        float horinzontalVel = Mathf.Lerp(body.velocity.x, 0, Time.deltaTime * HorizontalDrag);
-        body.velocity = new Vector2(horinzontalVel, body.velocity.y);
+        if (isGrounded)
+        {
+            float horizontalDrag = Mathf.Lerp(0, horizontalGroundDrag, Mathf.Abs(body.velocity.x) / maxHorizontalSpeed);
+            horizontalDrag = horizontalDrag * Time.deltaTime;
+            if (body.velocity.x < 0)
+                body.velocity += new Vector2(horizontalDrag, 0);
+            else
+                body.velocity -= new Vector2(horizontalDrag, 0);
+        }
+        else
+        {
+            float horizontalDrag = Mathf.Lerp(0, horizontalAirDrag, Mathf.Abs(body.velocity.x) / maxHorizontalSpeed);
+            horizontalDrag = horizontalDrag * Time.deltaTime;
+            if (body.velocity.x < 0)
+                body.velocity += new Vector2(horizontalDrag, 0);
+            else
+                body.velocity -= new Vector2(horizontalDrag, 0);
+        }
 
         // If player is in a state where he can't move no input is handled
         if (!canMove)
             return;
 
         JumpingInput();
-        MoveInput();
+
+        if (isGrounded)
+            GroundMoveInput();
+        else
+            AirMoveInput();
 
         // Update velocity variable to be viewed in inspector.  Mostly for debugging
         vel = body.velocity;
     }
 
-    void MoveInput()
+    void GroundMoveInput()
     {
-        // Handle moving input
+        // Handle moving on ground input
+        float adjustedSprintSpeed = sprintSpeed * Time.deltaTime;
+        float adjustedHorizontalSpeed = horizontalSpeed * Time.deltaTime;
         if (Input.GetButton("Horizontal") && Input.GetAxisRaw("Horizontal") < 0)
         {
-            if (Input.GetButton("Sprint") && isGrounded)
+            if (Input.GetButton("Sprint"))
             {
-                body.velocity -= new Vector2(sprintSpeed, 0);
-                if (Mathf.Abs(body.velocity.x) > maxSprintSpeed)
+                body.velocity -= new Vector2(adjustedSprintSpeed, 0);
+                if (body.velocity.x < -maxSprintSpeed)
                 {
                     body.velocity = new Vector2(-maxSprintSpeed, body.velocity.y);
                 }
             }
             else
             {
-                body.velocity -= new Vector2(horizontalSpeed, 0);
-                if (Mathf.Abs(body.velocity.x) > maxHorizontalSpeed)
+                body.velocity -= new Vector2(adjustedHorizontalSpeed, 0);
+                if (body.velocity.x < -maxHorizontalSpeed)
                 {
                     body.velocity = new Vector2(-maxHorizontalSpeed, body.velocity.y);
                 }
             }
-
             if (!facingLeft)
             {
                 Flip();
@@ -296,25 +293,58 @@ public class SwordGuy : MonoBehaviour
 
         if (Input.GetButton("Horizontal") && Input.GetAxisRaw("Horizontal") > 0)
         {
-            if (Input.GetButton("Sprint") && isGrounded)
+            if (Input.GetButton("Sprint"))
             {
-                body.velocity += new Vector2(sprintSpeed, 0);
-                if (Mathf.Abs(body.velocity.x) > maxSprintSpeed)
+                body.velocity += new Vector2(adjustedSprintSpeed, 0);
+                if (body.velocity.x > maxSprintSpeed)
                 {
                     body.velocity = new Vector2(maxSprintSpeed, body.velocity.y);
                 }
             }
             else
             {
-                body.velocity += new Vector2(horizontalSpeed, 0);
-                if (Mathf.Abs(body.velocity.x) > maxHorizontalSpeed)
+                body.velocity += new Vector2(adjustedHorizontalSpeed, 0);
+                if (body.velocity.x > maxHorizontalSpeed)
                 {
                     body.velocity = new Vector2(maxHorizontalSpeed, body.velocity.y);
                 }
             }
             if (facingLeft)
             {
+                Flip();
+                facingLeft = false;
+            }
+        }
+    }
 
+    void AirMoveInput()
+    {
+        // Handle moving in air input
+        float adjustedHorizontalSpeed = horizontalSpeed * Time.deltaTime;
+        if (Input.GetButton("Horizontal") && Input.GetAxisRaw("Horizontal") < 0)
+        {
+            body.velocity -= new Vector2(adjustedHorizontalSpeed / horizontalAirControlAdjust, 0);
+            if (body.velocity.x < -maxSprintSpeed)
+            {
+                body.velocity = new Vector2(-maxSprintSpeed, body.velocity.y);
+            }
+            if (!facingLeft)
+            {
+                Flip();
+                facingLeft = true;
+            }
+        }
+
+        if (Input.GetButton("Horizontal") && Input.GetAxisRaw("Horizontal") > 0)
+        {
+            body.velocity += new Vector2(adjustedHorizontalSpeed / horizontalAirControlAdjust, 0);
+            if (body.velocity.x > maxSprintSpeed)
+            {
+                body.velocity = new Vector2(maxSprintSpeed, body.velocity.y);
+            }
+
+            if (facingLeft)
+            {
                 Flip();
                 facingLeft = false;
             }
@@ -324,34 +354,34 @@ public class SwordGuy : MonoBehaviour
     void JumpingInput()
     {
         // Handle jumping input
-        if (jumping)
+        isGrounded = feet.isGrounded;
+        if (isGrounded && body.velocity.y <= 0)
         {
-            if (currentJumpRecoveryTime < jumpRecoveryTimeInSeconds)
-            {
-                if (isGrounded)
-                    currentJumpRecoveryTime += Time.deltaTime;
-            }
-            else
-            {
-                jumping = false;
-            }
+            jumping = false;
+            currentJumpDurationTime = 0;
+            anim.SetBool("jump", false);
+        }
+        else
+        {
+            currentJumpDurationTime += Time.deltaTime;
+            anim.SetBool("jump", true);
         }
 
-        if (!jumping && Input.GetButtonDown("Jump"))
+        if (Input.GetButton("Jump") && body.velocity.y >= 0)
         {
-            jumping = true;
-            isGrounded = false;
-            currentJumpRecoveryTime = 0;
-            if (Input.GetButton("Sprint"))
+            if (currentJumpDurationTime <= jumpDurationTime)
             {
-                body.velocity += new Vector2(0, jumpForceHigh);
+                if (!jumping)
+                {
+                    anim.SetTrigger("start jump");
+                }
+
+                jumping = true;
+                isGrounded = false;
+                float adjustedJumpForce = Mathf.Lerp(jumpForce, 0, currentJumpDurationTime / jumpDurationTime);
+
+                body.velocity = new Vector2(body.velocity.x, adjustedJumpForce);
             }
-            else
-            {
-                body.velocity += new Vector2(0, jumpForce);
-            }
-            anim.SetBool("jump", true);
-            anim.SetTrigger("start jump");
         }
     }
 
@@ -400,6 +430,11 @@ public class SwordGuy : MonoBehaviour
         return dead;
     }
 
+    public int getMaxHealth()
+    {
+        return maxHealth;
+    }
+
     // Mutator Methods -------------------------------------------------------------
 
     /// <summary>
@@ -415,7 +450,6 @@ public class SwordGuy : MonoBehaviour
         else
         {
             invulnerabilityTimer = 0;
-            currentJumpRecoveryTime = jumpRecoveryTimeInSeconds;
         }
 
         audioSource.PlayOneShot(getHitSound, soundEffectVolume);

@@ -30,4 +30,6 @@ public class GameManager : MonoBehaviour {
     {
         SceneManager.LoadScene(levelName);
     }
+
+    
 }

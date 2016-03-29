@@ -13,7 +13,10 @@ public class LaserRobot : Enemy {
     private AudioClip hitSound, laserSound;
 
     [SerializeField]
-    private int health = 20, damage = 10;
+    private int currentHealth, maxHealth = 20, damage = 10;
+
+    [SerializeField]
+    private bool canDamageOnTouch = true;
 
     private AudioSource audioSource;
     private SpriteRenderer spriteRenderer;
@@ -28,17 +31,18 @@ public class LaserRobot : Enemy {
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (transform.rotation.y != 180)
             facingLeft = true;
+        currentHealth = maxHealth;
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+        ShowDamage();
 	}
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && canDamageOnTouch)
             other.gameObject.GetComponent<SwordGuy>().GetHit(damage);
     }
 
@@ -65,6 +69,11 @@ public class LaserRobot : Enemy {
         }
     }
 
+    protected override void ShowDamage()
+    {
+        spriteRenderer.color = Color.Lerp(Color.red, Color.white, (float)currentHealth / (float)maxHealth);
+    }
+
     void Attack()
     {
         anim.SetTrigger("attack");
@@ -80,8 +89,8 @@ public class LaserRobot : Enemy {
     {
         audioSource.PlayOneShot(hitSound, soundVolume);
         anim.SetTrigger("gotHit");
-        health -= damage;
-        if (health <= 0)
+        currentHealth -= damage;
+        if (currentHealth <= 0)
         {
             DestroySelf();
         }

@@ -3,7 +3,8 @@ using System.Collections;
 
 public class CameraFollow : MonoBehaviour {
 
-    public bool followY = true;
+    public bool followY = true, useBounds = false;
+    public float xLowerBounds, xUpperBounds;
 
 
     [SerializeField]
@@ -15,6 +16,11 @@ public class CameraFollow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         float lerpValx = Mathf.Lerp(transform.position.x, target.transform.position.x + editX, Time.deltaTime * cameraSpeed);
+        if (lerpValx < xLowerBounds && useBounds)
+            lerpValx = xLowerBounds;
+        if (lerpValx > xUpperBounds && useBounds)
+            lerpValx = xUpperBounds;
+
         float lerpValy;
         if (followY)
             lerpValy = Mathf.Lerp(transform.position.y, target.transform.position.y + editY, Time.deltaTime * cameraSpeed);
