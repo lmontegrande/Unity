@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Enemies\Robot\ChaseRobot.cs" />
     <Compile Include="Assets\Scripts\Enemies\Robot\Robot.cs" />
     <Compile Include="Assets\Scripts\Game Manager\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Game Manager\UnlockLevel.cs" />
     <Compile Include="Assets\Scripts\HUD\MainMenuButton.cs" />
     <Compile Include="Assets\Scripts\Hazards\Spikes.cs" />
     <Compile Include="Assets\Scripts\Main Menu\MainMenuManager.cs" />

@@ -1,0 +1,489 @@
+fileFormatVersion: 2
+guid: dc6366563366b5143ba4f95ebf99683b
+timeCreated: 1459301579
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Level 1 Cutscene 3_0
+    21300002: Level 1 Cutscene 3_1
+    21300004: Level 1 Cutscene 3_2
+    21300006: Level 1 Cutscene 3_3
+    21300008: Level 1 Cutscene 3_4
+    21300010: Level 1 Cutscene 3_5
+    21300012: Level 1 Cutscene 3_6
+    21300014: Level 1 Cutscene 3_7
+    21300016: Level 1 Cutscene 3_8
+    21300018: Level 1 Cutscene 3_9
+    21300020: Level 1 Cutscene 3_10
+    21300022: Level 1 Cutscene 3_11
+    21300024: Level 1 Cutscene 3_12
+    21300026: Level 1 Cutscene 3_13
+    21300028: Level 1 Cutscene 3_14
+    21300030: Level 1 Cutscene 3_15
+    21300032: Level 1 Cutscene 3_16
+    21300034: Level 1 Cutscene 3_17
+    21300036: Level 1 Cutscene 3_18
+    21300038: Level 1 Cutscene 3_19
+    21300040: Level 1 Cutscene 3_20
+    21300042: Level 1 Cutscene 3_21
+    21300044: Level 1 Cutscene 3_22
+    21300046: Level 1 Cutscene 3_23
+    21300048: Level 1 Cutscene 3_24
+    21300050: Level 1 Cutscene 3_25
+    21300052: Level 1 Cutscene 3_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Level 1 Cutscene 3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_8
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_9
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_10
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_11
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_13
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_14
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_15
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_16
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_17
+      rect:
+        serializedVersion: 2
+        x: 4352
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_18
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_19
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_20
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_21
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_22
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_23
+      rect:
+        serializedVersion: 2
+        x: 5888
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_24
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_25
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    - name: Level 1 Cutscene 3_26
+      rect:
+        serializedVersion: 2
+        x: 6656
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 96}
+        - {x: -128, y: -96}
+        - {x: 128, y: -96}
+        - {x: 128, y: 96}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

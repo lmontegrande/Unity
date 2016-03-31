@@ -10,12 +10,15 @@ public class MainMenuManager : MonoBehaviour {
         GameManager instance = GameManager.instance;
         Button LevelZero = GameObject.Find("Level 0 Button").GetComponent<Button>();
         Button LevelOne = GameObject.Find("Level 1 Button").GetComponent<Button>();
+        Button LevelTwo = GameObject.Find("Level 2 Button").GetComponent<Button>();
 
         instance.health = 0;
         if (GameManager.instance.levelZeroUnlocked)
             LevelZero.interactable = true;
         if (GameManager.instance.levelOneUnlocked)
             LevelOne.interactable = true;
+        if (GameManager.instance.levelTwoUnlocked)
+            LevelTwo.interactable = true;
     }
 
     public void Intro()
@@ -26,5 +29,15 @@ public class MainMenuManager : MonoBehaviour {
 	public void LoadLevelOne()
     {
         SceneManager.LoadScene("Cutscene 1 - 1");
+    }
+
+    public void LoadLevelTwo()
+    {
+
+    }
+
+    public void LoadLevelThree()
+    {
+
     }
 }
