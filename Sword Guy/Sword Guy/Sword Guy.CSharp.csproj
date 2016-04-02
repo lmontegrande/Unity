@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Button\TryAgainButton.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Door\Door.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Bird\Bird.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemies\Laser Robot\Laser.cs" />
     <Compile Include="Assets\Scripts\Enemies\Laser Robot\LaserRobot.cs" />

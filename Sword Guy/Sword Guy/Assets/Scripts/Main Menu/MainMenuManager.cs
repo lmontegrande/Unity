@@ -33,7 +33,7 @@ public class MainMenuManager : MonoBehaviour {
 
     public void LoadLevelTwo()
     {
-
+        SceneManager.LoadScene("Cutscene 2 - 1");
     }
 
     public void LoadLevelThree()
