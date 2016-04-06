@@ -11,6 +11,7 @@ public class MainMenuManager : MonoBehaviour {
         Button LevelZero = GameObject.Find("Level 0 Button").GetComponent<Button>();
         Button LevelOne = GameObject.Find("Level 1 Button").GetComponent<Button>();
         Button LevelTwo = GameObject.Find("Level 2 Button").GetComponent<Button>();
+        Button LevelThree = GameObject.Find("Level 3 Button").GetComponent<Button>();
 
         instance.health = 0;
         if (GameManager.instance.levelZeroUnlocked)
@@ -19,6 +20,8 @@ public class MainMenuManager : MonoBehaviour {
             LevelOne.interactable = true;
         if (GameManager.instance.levelTwoUnlocked)
             LevelTwo.interactable = true;
+        if (GameManager.instance.levelThreeUnlocked)
+            LevelThree.interactable = true;
     }
 
     public void Intro()
@@ -38,6 +41,6 @@ public class MainMenuManager : MonoBehaviour {
 
     public void LoadLevelThree()
     {
-
+        SceneManager.LoadScene("Level 3 - 1");
     }
 }

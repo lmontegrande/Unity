@@ -3,8 +3,16 @@ using System.Collections;
 
 public class CameraFollow : MonoBehaviour {
 
-    public bool followY = true, useBounds = false;
-    public float xLowerBounds, xUpperBounds;
+    public bool 
+        followY = true, 
+        useXBounds = false, 
+        useYBounds = false;
+
+    public float 
+        xLowerBounds = 0, 
+        xUpperBounds = 100,
+        yLowerBounds = 0,
+        yUpperBounds = 100;
 
 
     [SerializeField]
@@ -13,27 +21,28 @@ public class CameraFollow : MonoBehaviour {
     [SerializeField]
     GameObject target;
 	
-	// Update is called once per frame
 	void Update () {
         float lerpValx = Mathf.Lerp(transform.position.x, target.transform.position.x + editX, Time.deltaTime * cameraSpeed);
-        if (lerpValx < xLowerBounds && useBounds)
+        if (lerpValx < xLowerBounds && useXBounds)
             lerpValx = xLowerBounds;
-        if (lerpValx > xUpperBounds && useBounds)
+        if (lerpValx > xUpperBounds && useXBounds)
             lerpValx = xUpperBounds;
 
         float lerpValy;
         if (followY)
+        {
             lerpValy = Mathf.Lerp(transform.position.y, target.transform.position.y + editY, Time.deltaTime * cameraSpeed);
+            if (useYBounds)
+            {
+                if (lerpValy < yLowerBounds)
+                    lerpValy = yLowerBounds;
+                if (lerpValy > yUpperBounds)
+                    lerpValy = yUpperBounds;
+            }
+        }
         else
             lerpValy = transform.position.y;
         Vector3 lerpedVector = new Vector3(lerpValx, lerpValy, transform.position.z);
         transform.position = lerpedVector;
-
-        /*
-        if (followY)
-            transform.position = new Vector3(target.transform.position.x + editX, target.transform.position.y + editY, transform.position.z);
-        else
-            transform.position = new Vector3(target.transform.position.x + editX, transform.position.y, transform.position.z);
-            */
     }
 }

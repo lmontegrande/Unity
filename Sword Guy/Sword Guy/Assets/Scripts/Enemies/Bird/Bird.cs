@@ -56,7 +56,6 @@ public class Bird : Enemy {
         if (spottedEnemy || Vector2.Distance(new Vector2(transform.position.x, transform.position.y), new Vector2(player.position.x, player.position.y)) < patrolRange) {
             spottedEnemy = true;
             animator.SetBool("attacking", true);
-            Debug.Log("Chasing");
             Vector3 LerpPosition = Vector3.MoveTowards(transform.position, player.position, Time.deltaTime * speed);
             transform.position = LerpPosition;
         } 

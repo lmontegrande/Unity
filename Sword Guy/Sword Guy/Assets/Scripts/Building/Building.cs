@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Building : MonoBehaviour {
 
+    public string levelToLoad = "Level 0 - 2";
+
     private GameManager gameManager;
 
     void Start()
@@ -16,6 +18,6 @@ public class Building : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
-            gameManager.LoadLevel("Level 0 - 2");
+            gameManager.LoadLevel(levelToLoad);
     }
 }
