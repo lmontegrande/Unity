@@ -41,6 +41,7 @@ public class Robot : Enemy {
     {
         if (gameManager != null)
             gameManager = GameManager.instance;
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         audioSource = GetComponent<AudioSource>();
         dead = false;
@@ -150,8 +151,8 @@ public class Robot : Enemy {
 
     public override void GetHit(int damage)
     {
+        currentRecoveryTime = 0f;
         audioSource.PlayOneShot(getHitSound, soundEffectVolume);
-        gettingHit = true;
         anim.SetBool("gotHit", true);
         gettingHit = true;
         currentHealth -= damage;

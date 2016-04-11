@@ -3,6 +3,8 @@ using System.Collections;
 
 public class BigRobot : Robot {
 
+    public string sceneToLoad = "Cutscene 0 - 1";
+
     public override void DestroySelf()
     {
         StartCoroutine(LoadNext());
@@ -15,6 +17,6 @@ public class BigRobot : Robot {
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
         yield return new WaitForSeconds(2f);
         GameManager.instance.levelOneUnlocked = true;
-        GameManager.instance.LoadLevel("Cutscene 0 - 1");
+        GameManager.instance.LoadLevel(sceneToLoad);
     }
 }

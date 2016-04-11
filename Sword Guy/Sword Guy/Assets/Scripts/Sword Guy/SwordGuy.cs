@@ -53,6 +53,7 @@ public class SwordGuy : MonoBehaviour
     private GameObject reloadLevelButton;
     private GameManager gameManager;
     private AudioSource audioSource;
+    private Text text;
     private float invulnerabilityTimer = 1f;
     private float currentAttackRecoverTime;
     private float currentRecoveryTime = 0;
@@ -87,6 +88,8 @@ public class SwordGuy : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         body = GetComponent<Rigidbody2D>();
+        text = attackText.GetComponent<Text>();
+
         if (transform.rotation.y < 180)
         {
             facingLeft = false;
@@ -129,7 +132,6 @@ public class SwordGuy : MonoBehaviour
     /// </summary>
     void UpdateHUD()
     {
-        Text text = attackText.GetComponent<Text>();
         if (!attacking && !jumping && !gettingHit)
         {
             text.text = "ATTACK READY!";
@@ -156,6 +158,9 @@ public class SwordGuy : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Update animator values
+    /// </summary>
     void SetAnimVars()
     {
         if (dead)
@@ -225,7 +230,6 @@ public class SwordGuy : MonoBehaviour
     /// </summary>
     void Move()
     {
-
         // Handle horizontal drag
         if (isGrounded)
         {
@@ -261,6 +265,9 @@ public class SwordGuy : MonoBehaviour
         vel = body.velocity;
     }
 
+    /// <summary>
+    /// Handle Input when player is grounded
+    /// </summary>
     void GroundMoveInput()
     {
         // Handle moving on ground input
@@ -317,6 +324,9 @@ public class SwordGuy : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Handle input when player is not grounded
+    /// </summary>
     void AirMoveInput()
     {
         // Handle moving in air input
@@ -351,6 +361,9 @@ public class SwordGuy : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Handle jumping input
+    /// </summary>
     void JumpingInput()
     {
         // Handle jumping input
@@ -477,6 +490,18 @@ public class SwordGuy : MonoBehaviour
         audioSource.PlayOneShot(swordSoundEffect, soundEffectVolume);
         Collider2D[] hits = Physics2D.OverlapCircleAll(sword.position, swingDistance, 1 << LayerMask.NameToLayer("Enemies"));
         Collider2D hit = new Collider2D();
+
+        for (int x=0; x <= hits.Length-1; x++)
+        {
+            hit = hits[x];
+            if (!hit.isTrigger)
+            {
+                hit.gameObject.GetComponent<Enemy>().GetHit(myDamage);
+            }
+        }
+
+        // Note to self, foreach statements in Unity are very costly
+        /*
         foreach (Collider2D rayHit in hits)
         {
             if (!rayHit.isTrigger)
@@ -485,5 +510,6 @@ public class SwordGuy : MonoBehaviour
                 hit.gameObject.GetComponent<Enemy>().GetHit(myDamage);
             }
         }
+        */
     }
 }
