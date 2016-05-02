@@ -81,6 +81,7 @@ public class EnemyController : MonoBehaviour
         {
             components[i].enabled = false;
         }
+        enabled = false;
     }
     /// <summary>
     /// Our attack routine. Attack until we're told not to.

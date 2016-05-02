@@ -33,9 +33,19 @@ public class EnemyHealth : MonoBehaviour
             _dead = true;
             //Kill me!
             //1. Disable EnemyController. We're not 'alive' anymore
+
+            SendMessage("Died");
+            /*
             var enemyController = GetComponent<EnemyController>();
-            enemyController.Died();
-            enemyController.enabled = false;
+            if (enemyController != null)
+            {
+                enemyController.Died();
+                enemyController.enabled = false;
+            } else
+            {
+                
+            }
+            */
 
             //3. Play death animation
             _animator.SetTrigger("Death");

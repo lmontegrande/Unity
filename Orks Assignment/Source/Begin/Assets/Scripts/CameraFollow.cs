@@ -20,8 +20,8 @@ public class CameraFollow : MonoBehaviour
         //If you are just starting out in the lab, this won't yet be set (there is no player) and it will
         //show an error inthe console window. Ignore that, it will resolve when you add the player to the scene.
 
-        //player = GameObject.FindGameObjectWithTag("Player").transform;
-        player = GameObject.Find("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        //player = GameObject.Find("Player").transform;
     }
 
 

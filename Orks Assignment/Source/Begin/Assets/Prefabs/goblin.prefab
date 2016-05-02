@@ -9,13 +9,13 @@ GameObject:
   m_Component:
   - 4: {fileID: 407088}
   - 212: {fileID: 21294464}
-  - 114: {fileID: 11440114}
   - 95: {fileID: 9590636}
   - 50: {fileID: 5042492}
   - 58: {fileID: 5861872}
   - 58: {fileID: 5889952}
   - 114: {fileID: 11467058}
-  m_Layer: 0
+  - 114: {fileID: 11457956}
+  m_Layer: 8
   m_Name: goblin
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187448}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44.73368, y: 4.2192135, z: 0}
+  m_LocalPosition: {x: 30.769632, y: 3.6116095, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -96,7 +96,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11440114
+--- !u!114 &11457956
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 187448}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0c2ac7e41ccb69468c5d1fd4760c010, type: 3}
+  m_Script: {fileID: 11500000, guid: 61ad9c9ab1eacca4c9e29304734cb2d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 1
