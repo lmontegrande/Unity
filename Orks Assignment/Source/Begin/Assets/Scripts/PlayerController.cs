@@ -14,10 +14,12 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _rigidBody;
     private SpriteRenderer _spriteRenderer;
     private GameController _gameController;
+    private LevelTimer _levelTimer;
 
 
     private int Health = 100;
     private int _coinScore;
+    private int _orkScore;
     private bool _dead;
 
     //The read in values from the keyboard
@@ -32,6 +34,7 @@ public class PlayerController : MonoBehaviour
         _rigidBody = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+        _levelTimer = GameObject.FindGameObjectWithTag("LevelTimer").GetComponent<LevelTimer>();
     }
 
     public void GotHit(int hitPoints)
@@ -91,6 +94,13 @@ public class PlayerController : MonoBehaviour
         _gameController.UpdatePlayerCoin(_coinScore);
     }
 
+    //Add kill score
+    public void KillUp()
+    {
+        _orkScore++;
+        _gameController.UpdatePlayerOrk(_orkScore);
+    }
+
     //Called when we run over another object with a trigger
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -113,6 +123,11 @@ public class PlayerController : MonoBehaviour
             PowerUp(pickupProperties.HealthAmount);
 
             //TODO - get rid of the game object we just picked up
+            Destroy(collision.gameObject);
+        }
+        else if (collision.gameObject.tag == "TimePotion")
+        {
+            _levelTimer.AddTime(60);
             Destroy(collision.gameObject);
         }
     }
@@ -140,7 +155,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //TODO: Play Walk animation if we've read input on the horizontal
-        //_animator.SetBool("Walk", _horizontal != 0 || _vertical != 0);
+        _animator.SetBool("Walk", _horizontal != 0 || _vertical != 0);
     }
 
     void AttackLocalEnemies()
