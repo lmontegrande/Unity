@@ -1,0 +1,382 @@
+fileFormatVersion: 2
+guid: 92bc4e266b524d84eaa26ac4aeb0c694
+timeCreated: 1462496210
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Bird_0
+    21300002: Bird_1
+    21300004: Bird_2
+    21300006: Bird_3
+    21300008: Bird_4
+    21300010: Bird_5
+    21300012: Bird_6
+    21300014: Bird_7
+    21300016: Bird_8
+    21300018: Bird_9
+    21300020: Bird_10
+    21300022: Bird_11
+    21300024: Bird_12
+    21300026: Bird_13
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Bird_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1768
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: 134}
+        - {x: -69, y: 117}
+        - {x: -75, y: 64}
+        - {x: -99, y: 15}
+        - {x: -99, y: -62}
+        - {x: -45, y: -54}
+        - {x: 5, y: -97}
+        - {x: 81, y: -97}
+        - {x: 128, y: -60}
+        - {x: 140, y: -15}
+        - {x: 140, y: 73}
+        - {x: 128, y: 134}
+    - name: Bird_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1768
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 114}
+        - {x: -60, y: 94}
+        - {x: -101, y: 28}
+        - {x: -101, y: -29}
+        - {x: -85, y: -53}
+        - {x: 27, y: -96}
+        - {x: 95, y: -96}
+        - {x: 140, y: -19}
+        - {x: 140, y: 81}
+        - {x: 122, y: 114}
+    - name: Bird_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1768
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 120}
+        - {x: -53, y: 120}
+        - {x: -32, y: 105}
+        - {x: -35, y: 82}
+        - {x: -36, y: 73}
+        - {x: -35, y: 84}
+        - {x: -44, y: 93}
+        - {x: -62, y: 102}
+        - {x: -102, y: 29}
+        - {x: -102, y: -53}
+        - {x: -14, y: -91}
+        - {x: 2, y: -95}
+        - {x: 88, y: -95}
+        - {x: 139, y: -15}
+        - {x: 139, y: 72}
+        - {x: 133, y: 82}
+    - name: Bird_3
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1768
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 95}
+        - {x: -103, y: 93}
+        - {x: -103, y: -46}
+        - {x: -53, y: -71}
+        - {x: 10, y: -93}
+        - {x: 83, y: -93}
+        - {x: 138, y: -33}
+        - {x: 138, y: 81}
+        - {x: 111, y: 95}
+    - name: Bird_4
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1768
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -99, y: 96}
+        - {x: -113, y: 0}
+        - {x: -114, y: -3}
+        - {x: -114, y: -92}
+        - {x: 137, y: -92}
+        - {x: 137, y: 79}
+        - {x: 97, y: 96}
+    - name: Bird_5
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1768
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 97}
+        - {x: -105, y: -78}
+        - {x: -72, y: -111}
+        - {x: -64, y: -112}
+        - {x: 45, y: -123}
+        - {x: 89, y: -123}
+        - {x: 90, y: -121}
+        - {x: 136, y: -18}
+        - {x: 136, y: 97}
+    - name: Bird_6
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1768
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 64, y: 30}
+        - {x: -36, y: 98}
+        - {x: -76, y: 98}
+        - {x: -106, y: 25}
+        - {x: -106, y: -132}
+        - {x: 134, y: -132}
+        - {x: 135, y: -124}
+        - {x: 135, y: 45}
+        - {x: 109, y: 53}
+    - name: Bird_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1488
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 98}
+        - {x: -72, y: 98}
+        - {x: -100, y: 5}
+        - {x: -100, y: -34}
+        - {x: -92, y: -64}
+        - {x: -66, y: -132}
+        - {x: 108, y: -132}
+        - {x: 140, y: -14}
+        - {x: 140, y: 52}
+        - {x: 115, y: 72}
+    - name: Bird_8
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1488
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 102, y: 55}
+        - {x: -21, y: 97}
+        - {x: -67, y: 97}
+        - {x: -101, y: 31}
+        - {x: -101, y: -35}
+        - {x: -79, y: -123}
+        - {x: -75, y: -123}
+        - {x: -61, y: -113}
+        - {x: -53, y: -105}
+        - {x: -20, y: -83}
+        - {x: 0, y: -62}
+        - {x: 76, y: -123}
+        - {x: 100, y: -123}
+        - {x: 140, y: -17}
+        - {x: 140, y: 37}
+        - {x: 121, y: 47}
+    - name: Bird_9
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1488
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 95}
+        - {x: -67, y: 95}
+        - {x: -112, y: 39}
+        - {x: -112, y: -93}
+        - {x: 139, y: -93}
+        - {x: 139, y: 42}
+        - {x: 116, y: 64}
+    - name: Bird_10
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1488
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27, y: 94}
+        - {x: -92, y: 94}
+        - {x: -105, y: 82}
+        - {x: -105, y: -58}
+        - {x: -45, y: -94}
+        - {x: 106, y: -94}
+        - {x: 138, y: 2}
+        - {x: 138, y: 30}
+        - {x: 113, y: 49}
+    - name: Bird_11
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1488
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47, y: 53}
+        - {x: 29, y: 32}
+        - {x: -11, y: 111}
+        - {x: -23, y: 119}
+        - {x: -29, y: 119}
+        - {x: -30, y: 116}
+        - {x: -34, y: 98}
+        - {x: -36, y: 87}
+        - {x: -38, y: 72}
+        - {x: -37, y: 83}
+        - {x: -46, y: 92}
+        - {x: -64, y: 101}
+        - {x: -104, y: 30}
+        - {x: -104, y: -58}
+        - {x: -28, y: -96}
+        - {x: 83, y: -96}
+        - {x: 137, y: -34}
+        - {x: 137, y: 49}
+        - {x: 126, y: 90}
+    - name: Bird_12
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1488
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 68, y: 134}
+        - {x: 29, y: 134}
+        - {x: -61, y: 101}
+        - {x: -104, y: 12}
+        - {x: -104, y: -36}
+        - {x: -90, y: -51}
+        - {x: 10, y: -97}
+        - {x: 68, y: -97}
+        - {x: 86, y: -89}
+        - {x: 136, y: -4}
+        - {x: 136, y: 58}
+        - {x: 105, y: 128}
+    - name: Bird_13
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1488
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 67, y: 134}
+        - {x: 28, y: 134}
+        - {x: -62, y: 101}
+        - {x: -105, y: 12}
+        - {x: -105, y: -36}
+        - {x: -91, y: -51}
+        - {x: 9, y: -97}
+        - {x: 67, y: -97}
+        - {x: 85, y: -89}
+        - {x: 135, y: -4}
+        - {x: 135, y: 58}
+        - {x: 104, y: 128}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
