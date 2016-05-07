@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
     private GameObject
         frame,
         platform,
+        superPlatform,
         monster,
         trap,
         killTrigger,
@@ -113,7 +114,14 @@ public class GameManager : MonoBehaviour {
                 {
                     if (randomVar <= 75/level)
                     {
-                        platformToGenerate = platform;
+                        if (randomVar <= 5)
+                        {
+                            platformToGenerate = superPlatform;
+                        }
+                        else
+                        {
+                            platformToGenerate = platform;
+                        }
                     }
                     else
                     {
