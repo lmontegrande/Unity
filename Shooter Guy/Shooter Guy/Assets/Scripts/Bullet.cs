@@ -23,10 +23,8 @@ public class Bullet : MonoBehaviour
         {
             collider.GetComponent<Enemy>().GetHit(_rigidBody.velocity, _rigidBody.mass, damage);
         }
-        if (collider.tag != "PlayerBullet")
-        {
-            if (destroyOnContact)
-                Destroy(gameObject);
-        }
+
+        if (destroyOnContact)
+            Destroy(gameObject);
     }
 }

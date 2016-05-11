@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class FighterEnemy : MonoBehaviour, Enemy {
 
     [SerializeField]
     private float
-        moveSpeed = 1f;
+        moveSpeed = 1f,
+        knockback = 10f;
 
     [SerializeField]
     private int
-        maxHealth = 10;
+        maxHealth = 10,
+        damage = 10;
 
     private GameObject _player;
     private Rigidbody2D _rigidBody;
@@ -29,6 +32,15 @@ public class FighterEnemy : MonoBehaviour, Enemy {
         LookAt();
         Animate();
 	}
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        GameObject otherObject = other.gameObject;
+        if (otherObject.tag == "Player")
+        {
+            otherObject.GetComponent<GunGuyController>().GetHit(damage, transform.position, knockback);
+        }
+    }
 
     void Move()
     {
