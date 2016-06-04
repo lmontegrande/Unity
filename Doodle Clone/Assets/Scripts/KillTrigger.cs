@@ -9,7 +9,7 @@ public class KillTrigger : MonoBehaviour {
         {
             GameManager.instance.GameOver();
         }
-        else if (other.gameObject.tag == "Platform")
+        else if (other.gameObject.tag == "Platform" || other.gameObject.tag == "Enemy")
         {
             Destroy(other.gameObject);
         }

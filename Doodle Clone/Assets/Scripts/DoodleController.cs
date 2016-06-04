@@ -11,6 +11,9 @@ public class DoodleController : MonoBehaviour {
     private Scrollbar moveScrollBar;
 
     [SerializeField]
+    private AudioClip pewSound;
+
+    [SerializeField]
     private float 
         horizontalSpeed = 1f,
         bulletSpeed = 1f,
@@ -26,9 +29,10 @@ public class DoodleController : MonoBehaviour {
     void Start()
     {
 
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
         touchMode = true;
         isUsingAccelorometer = true;
+        horizontalSpeed *= 2;
 #endif
 
 #if UNITY_EDITOR
@@ -98,6 +102,7 @@ public class DoodleController : MonoBehaviour {
         Vector3 bulletDirection = (transform.position - interactPosition).normalized;
         GameObject bulletClone = Instantiate(bullet, transform.position, Quaternion.identity) as GameObject;
         bulletClone.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletDirection.x * bulletSpeed * sideShotModifier, bulletSpeed);
+        GetComponent<AudioSource>().PlayOneShot(pewSound);
         Destroy(bulletClone, 1f);
     }
 }

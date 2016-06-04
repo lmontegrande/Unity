@@ -6,6 +6,9 @@ public class GreenPlatform : MonoBehaviour {
     [SerializeField]
     private float horizontalBounceForce = 10f;
 
+    [SerializeField]
+    private AudioClip bounceSound;
+
 	void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
@@ -16,6 +19,7 @@ public class GreenPlatform : MonoBehaviour {
             if (playerBody.velocity.y <= 0)
             {
                 playerBody.velocity = new Vector2(playerBody.velocity.x, horizontalBounceForce);
+                GetComponent<AudioSource>().PlayOneShot(bounceSound);
             }
         }
     }

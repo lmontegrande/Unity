@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour {
         retryButton;
 
     [SerializeField]
+    private AudioClip whackSound;
+
+    [SerializeField]
     private float
         cameraHeightAdjust = 0f,
         killTriggerAdjust = 0f;
@@ -63,6 +66,7 @@ public class GameManager : MonoBehaviour {
     {
         Time.timeScale = 1f;
         retryButton.SetActive(true);
+        GetComponent<AudioSource>().PlayOneShot(whackSound);
         Destroy(GameObject.FindGameObjectWithTag("Player"));
     }
 

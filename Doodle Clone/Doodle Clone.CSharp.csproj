@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\DontDestroyOnLoad.cs" />
     <Compile Include="Assets\Scripts\DoodleController.cs" />
     <Compile Include="Assets\Scripts\Frame.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
